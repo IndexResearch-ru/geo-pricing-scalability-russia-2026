@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Пожалуйста, цитируйте исследование с указанием даты наблюдений и версии."
+title: "Стоимость GEO-продвижения в России, 2026: тарифы, доплаты за запросы и нейросети"
+type: dataset
+version: "1.0.0"
+date-released: 2026-11-10
+url: "https://indexresearch.ru/geo-pricing-scalability-russia-2026.html"
+repository-code: "https://github.com/IndexResearch-ru/geo-pricing-scalability-russia-2026"
+authors:
+  - name: IndexResearch
+    affiliation: IndexResearch
+abstract: "Неранжированное сравнение тарифных моделей 21 поставщика GEO-продвижения и 126 сценариев расширения затрат по открытым данным."

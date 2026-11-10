@@ -1,0 +1,11 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: SOURCE_CONFLICTS.csv>
+index,issue_id,entity_id,offer_id,source_id_a,observation_a,source_id_b,observation_b,outcome,resolution,checked_on
+0,VVERH-TEST-SCOPE,E03,P03-TEST,S003,"Current main Test: RUB 86,000/month, 50 prompts, 6 neural interfaces, 4 original materials/month",S004,"Other older official page: Brand Company from RUB 80,000/month, up to 50 prompts, five named interfaces; DISTINCT named offer, not Test and not 15 prompts",DISTINCT_OFFER_FAMILIES_NO_DIRECT_TEST_CONFLICT,RESOLVED_2026-11-10_INDEXED_OFFICIAL_CONTENT_REVIEW,2026-11-10
+1,PIXEL-OPT-PRICE,E06,P06-TABLE,S009,"179,900/month in page header",S009,"189,900/month in price tier",CONFLICTED_PRICE_NO_BASE_CALC,UNRESOLVED_OR_QUALIFIED,2026-11-10
+2,RUSH-PRICE,E10,P10-FAQ,S013,"200,000 SEO+GEO tariff, period not on card",S013,"100,000/month in FAQ, media/text extra",CONFLICTED_PRODUCT_PERIOD_NO_BASE_CALC,UNRESOLVED_OR_QUALIFIED,2026-11-10
+3,DEMIS-MEGATRON,E11,P11-MEGA,S014,"137,000 displayed in same tariff",S014,"95,900 displayed in same tariff; term not established",CONFLICTED_PRICE_PERIOD_NO_BASE_CALC,UNRESOLVED_OR_QUALIFIED,2026-11-10
+4,KOKOC-PRICE,E20,P20-PRICE,S023,"100,000/month in cost block",S023,"80,000/month in FAQ",CONFLICTED_PRICE_NO_BASE_CALC,UNRESOLVED_OR_QUALIFIED,2026-11-10
+5,GEOAIST-MANAGED,E21,P21-DOTCOM,S024,"50,000/month on .com",S025,"58,000/month on .ru home",CONFLICTED_OFFER_ID_NO_BASE_CALC,UNRESOLVED_OR_QUALIFIED,2026-11-10
+6,SEOPERFORMANCE-CHECK,E13,P13-HOMEPAGE,S016,"Current official GEO pricing page: from RUB 84,000 per month",S016,"Prior note of RUB 100,000 not confirmed on the checked official pricing page",OLDER_UNSUPPORTED_NOTE_DISCARDED; CURRENT_84K_FROM_PRICING_PAGE,RESOLVED_WITH_RETAINED_SOURCE_FRESHNESS_LIMITATION,2026-11-10
+7,CARAMBOLA-TERM,E16,P16-BASE,S019,Six-month conditional financial guarantee wording,S019,Minimum term of Basic tariff not explicitly established,QUALIFIED: SIX_MONTH_GUARANTEE_IS_NOT_GENERAL_BASIC_TARIFF_MINIMUM,QUALIFIED_NOT_A_PRICE_CONFLICT,2026-11-10

@@ -1,0 +1,1577 @@
+{
+  "@context": "https://schema.org",
+  "researchId": "geo-pricing-scalability-russia-2026",
+  "publisher": "IndexResearch",
+  "version": "1.0.0",
+  "releaseDate": "2026-11-10",
+  "observationReviewDate": "2026-11-10",
+  "status": "RU_RELEASE_STAGE",
+  "format": "UNRANKED_DOCUMENTARY_BENCHMARK",
+  "researchQuestion": "Какие расходы при расширении GEO-продвижения можно рассчитать до коммерческого предложения?",
+  "sample": {
+    "initialBrandEntries": 23,
+    "includedEconomicProviders": 21,
+    "officialSourceURLs": 28,
+    "namedTariffObservations": 48,
+    "scenarioRows": 126,
+    "scenarioLowerBoundRows": 25,
+    "unknownOrBlockedRows": 101,
+    "traceableClaims": 34
+  },
+  "invariants": {
+    "hasRanking": false,
+    "hasScores": false,
+    "weightsApplied": false,
+    "sourceCaptureMode": "dated indexed official pages, variable crawl age, no synchronized raw HTML archive"
+  },
+  "scenarios": [
+    {
+      "id": "BASE_3M",
+      "description": "3 months at published starting plan, excluding unknown extras",
+      "add_prompts": 0,
+      "add_networks": 0,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "PROMPTS_PLUS_20",
+      "description": "Baseline plus 20 questions / prompts per month",
+      "add_prompts": 20,
+      "add_networks": 0,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "NETWORKS_PLUS_2",
+      "description": "Baseline plus 2 neural interfaces",
+      "add_prompts": 0,
+      "add_networks": 2,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "BOTH_PLUS_20_2",
+      "description": "Baseline plus 20 prompts and 2 neural interfaces",
+      "add_prompts": 20,
+      "add_networks": 2,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "CONTENT_PLUS_4",
+      "description": "4 additional content units per month",
+      "add_prompts": 0,
+      "add_networks": 0,
+      "add_materials": 4,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "PAID_PLACEMENT_PLUS_1",
+      "description": "1 additional paid third-party placement per month",
+      "add_prompts": 0,
+      "add_networks": 0,
+      "add_materials": 0,
+      "paid_placements_per_month": 1
+    }
+  ],
+  "providers": [
+    {
+      "entityId": "E01",
+      "name": "GAEO.ru / Алексей Яковлев",
+      "baselineOfferId": "P01-BASE",
+      "baselineOfferName": "GEO-продвижение",
+      "modelClass": "PARAMETRIC",
+      "monthlyPublishedValueRub": 79900,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 239700,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S001",
+      "sourceUrl": "https://gaeo.ru/tarify/",
+      "limitations": "From-price; site/content implemented by client team; outside placements and custom work require contract",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 79900,
+          "threeMonthArithmeticFloorRub": 239700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P01-BASE",
+          "sourceIds": "S001"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "PUBLISHED_FORMULA_LOWER_BOUND",
+          "monthlyFloorRub": 99900,
+          "threeMonthArithmeticFloorRub": 299700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P01-BASE",
+          "sourceIds": "S001"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "PUBLISHED_FORMULA_LOWER_BOUND",
+          "monthlyFloorRub": 99900,
+          "threeMonthArithmeticFloorRub": 299700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P01-BASE",
+          "sourceIds": "S001"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "PUBLISHED_FORMULA_LOWER_BOUND",
+          "monthlyFloorRub": 119900,
+          "threeMonthArithmeticFloorRub": 359700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P01-BASE",
+          "sourceIds": "S001"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S001"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S001"
+        }
+      ]
+    },
+    {
+      "entityId": "E02",
+      "name": "Команда Козулина / Илья Козулин",
+      "baselineOfferId": "P02-MONTH",
+      "baselineOfferName": "ТОП-3 в нейросетях",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 100000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 300000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S002",
+      "sourceUrl": "https://teamkozulin.ru/",
+      "limitations": "8-10 external articles/month included with placements; no per-unit expansion rate disclosed",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 100000,
+          "threeMonthArithmeticFloorRub": 300000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P02-MONTH",
+          "sourceIds": "S002"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S002"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S002"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S002"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S002"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S002"
+        }
+      ]
+    },
+    {
+      "entityId": "E03",
+      "name": "VVERH DIGITAL",
+      "baselineOfferId": "P03-TEST",
+      "baselineOfferName": "Тест",
+      "modelClass": "FIXED_TIER",
+      "monthlyPublishedValueRub": 86000,
+      "priceKind": "PUBLISHED",
+      "threeMonthArithmeticFloorRub": 258000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S003",
+      "sourceUrl": "https://vverh.digital/geo-prodvizhenie/",
+      "limitations": "Test 86,000/month: 50 prompts, six networks and four original materials per month. Older page describes distinct alternative tariff names; paid external placements require quote.",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 86000,
+          "threeMonthArithmeticFloorRub": 258000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P03-TEST",
+          "sourceIds": "S003"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 162000,
+          "threeMonthArithmeticFloorRub": 486000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P03-BRAND",
+          "sourceIds": "S003"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_NO_PUBLISHED_MATCHING_TIER",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S003"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_NO_PUBLISHED_MATCHING_TIER",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S003"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 162000,
+          "threeMonthArithmeticFloorRub": 486000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P03-BRAND",
+          "sourceIds": "S003"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S003"
+        }
+      ]
+    },
+    {
+      "entityId": "E04",
+      "name": "Citato",
+      "baselineOfferId": "P04-PROMO",
+      "baselineOfferName": "Сопровождение (акция)",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 80000,
+      "priceKind": "CONDITIONAL_PROMO",
+      "threeMonthArithmeticFloorRub": 240000,
+      "minimumContractMonths": 2,
+      "minimumTermFloorRub": 240000,
+      "primarySourceId": "S006",
+      "sourceUrl": "https://www.citato.agency/blog/skolko-stoit-geo-prodvizhenie",
+      "limitations": "Signing deadline Dec 31 2026, price scope and 3-month duration require confirmation",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 80000,
+          "threeMonthArithmeticFloorRub": 240000,
+          "minimumTermFloorRub": 240000,
+          "selectedOfferId": "P04-PROMO",
+          "sourceIds": "S006"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 240000,
+          "selectedOfferId": null,
+          "sourceIds": "S006"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 240000,
+          "selectedOfferId": null,
+          "sourceIds": "S006"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 240000,
+          "selectedOfferId": null,
+          "sourceIds": "S006"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 240000,
+          "selectedOfferId": null,
+          "sourceIds": "S006"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 240000,
+          "selectedOfferId": null,
+          "sourceIds": "S006"
+        }
+      ]
+    },
+    {
+      "entityId": "E05",
+      "name": "Head Promo",
+      "baselineOfferId": "P05-TEST",
+      "baselineOfferName": "Тест",
+      "modelClass": "FIXED_TIER",
+      "monthlyPublishedValueRub": 98000,
+      "priceKind": "PUBLISHED",
+      "threeMonthArithmeticFloorRub": 294000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S008",
+      "sourceUrl": "https://head-promo.ru/geo-prodvizhenie-v-deepseek/",
+      "limitations": "Other coverage and outreach change between tiers",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 98000,
+          "threeMonthArithmeticFloorRub": 294000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P05-TEST",
+          "sourceIds": "S008"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 238000,
+          "threeMonthArithmeticFloorRub": 714000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P05-BRAND",
+          "sourceIds": "S008"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_NO_PUBLISHED_MATCHING_TIER",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S008"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_NO_PUBLISHED_MATCHING_TIER",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S008"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 238000,
+          "threeMonthArithmeticFloorRub": 714000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P05-BRAND",
+          "sourceIds": "S008"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S008"
+        }
+      ]
+    },
+    {
+      "entityId": "E06",
+      "name": "Пиксель Плюс",
+      "baselineOfferId": "P06-TABLE",
+      "baselineOfferName": "AEO+GEO Оптимальный (table)",
+      "modelClass": "CONFLICTED",
+      "monthlyPublishedValueRub": 189900,
+      "priceKind": "CONFLICTED",
+      "threeMonthArithmeticFloorRub": null,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S009",
+      "sourceUrl": "https://pixelplus.ru/geo/",
+      "limitations": "Contradicts the hero; different from SEO+AEO+GEO Complex 2.0 at 195900",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S009"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S009"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S009"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S009"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S009"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S009"
+        }
+      ]
+    },
+    {
+      "entityId": "E07",
+      "name": "ПРО-САЙТ",
+      "baselineOfferId": "P07-START",
+      "baselineOfferName": "ИИ-Старт",
+      "modelClass": "FIXED_TIER",
+      "monthlyPublishedValueRub": 45000,
+      "priceKind": "PUBLISHED",
+      "threeMonthArithmeticFloorRub": 135000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S010",
+      "sourceUrl": "https://pro-site.org/geo/",
+      "limitations": "Detailed quantitative prompt/network quotas not all specified",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 45000,
+          "threeMonthArithmeticFloorRub": 135000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P07-START",
+          "sourceIds": "S010"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S010"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S010"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S010"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S010"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S010"
+        }
+      ]
+    },
+    {
+      "entityId": "E08",
+      "name": "Скобеев и Партнеры",
+      "baselineOfferId": "P08-VIP",
+      "baselineOfferName": "GEO VIP",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 300000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 900000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S011",
+      "sourceUrl": "https://skobeeff.com/uslugi/geo-prodvizhenie/",
+      "limitations": "Standalone tier, unlike discounted GEO NEW conditional on SEO",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 300000,
+          "threeMonthArithmeticFloorRub": 900000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P08-VIP",
+          "sourceIds": "S011"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S011"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S011"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S011"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S011"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S011"
+        }
+      ]
+    },
+    {
+      "entityId": "E09",
+      "name": "Digital Geeks",
+      "baselineOfferId": "P09-START",
+      "baselineOfferName": "Старт",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 150000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 450000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S012",
+      "sourceUrl": "https://digitalgeeks.ru/generative-engine-optimization/",
+      "limitations": "Starting amount and published package only; other costs may apply",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 150000,
+          "threeMonthArithmeticFloorRub": 450000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P09-START",
+          "sourceIds": "S012"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S012"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S012"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S012"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S012"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S012"
+        }
+      ]
+    },
+    {
+      "entityId": "E10",
+      "name": "Rush Agency",
+      "baselineOfferId": "P10-FAQ",
+      "baselineOfferName": "AI-продвижение — FAQ",
+      "modelClass": "CONFLICTED",
+      "monthlyPublishedValueRub": 100000,
+      "priceKind": "CONFLICTED",
+      "threeMonthArithmeticFloorRub": null,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S013",
+      "sourceUrl": "https://www.rush-agency.ru/prodvizhenie-sajta-v-ai/",
+      "limitations": "100k/month in FAQ; product identity cannot be matched to tariff 200k no period",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S013"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S013"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S013"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S013"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S013"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S013"
+        }
+      ]
+    },
+    {
+      "entityId": "E11",
+      "name": "Demis Group",
+      "baselineOfferId": "P11-MEGA",
+      "baselineOfferName": "Мегатрон (GEO без SEO)",
+      "modelClass": "CONFLICTED",
+      "monthlyPublishedValueRub": null,
+      "priceKind": "CONFLICTED",
+      "threeMonthArithmeticFloorRub": null,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S014",
+      "sourceUrl": "https://www.demis.ru/services/geo-prodvizhenie-saytov/",
+      "limitations": "95,900/137,000 observed in same pricing table; monthly unit not established",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S014"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S014"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S014"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S014"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S014"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S014"
+        }
+      ]
+    },
+    {
+      "entityId": "E12",
+      "name": "TRINET.Group",
+      "baselineOfferId": "P12-BASE",
+      "baselineOfferName": "Комплексное сопровождение",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 120000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 360000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S015",
+      "sourceUrl": "https://trinet.ru/services/geo-prodvizhenie/",
+      "limitations": "From-monthly, exact scope depends on company needs",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 120000,
+          "threeMonthArithmeticFloorRub": 360000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P12-BASE",
+          "sourceIds": "S015"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S015"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S015"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S015"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S015"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S015"
+        }
+      ]
+    },
+    {
+      "entityId": "E13",
+      "name": "Seo Performance Agency",
+      "baselineOfferId": "P13-HOMEPAGE",
+      "baselineOfferName": "GEO-продвижение (главная)",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 84000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 252000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S016",
+      "sourceUrl": "https://seo-performance.ru/",
+      "limitations": "Dedicated other GEO prices page needs revalidation, not same offer unless proven",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 84000,
+          "threeMonthArithmeticFloorRub": 252000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P13-HOMEPAGE",
+          "sourceIds": "S016"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S016"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S016"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S016"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S016"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S016"
+        }
+      ]
+    },
+    {
+      "entityId": "E14",
+      "name": "РА «Ковалевы»",
+      "baselineOfferId": "P14-MANAGE",
+      "baselineOfferName": "Управление (ТЗ для 10 статей)",
+      "modelClass": "FIXED_TIER",
+      "monthlyPublishedValueRub": 90000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 270000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S017",
+      "sourceUrl": "https://d-kovalev.ru/service/geo-i-aeo-prodvizhenie/",
+      "limitations": "Ten content briefs, not ten produced articles",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 90000,
+          "threeMonthArithmeticFloorRub": 270000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P14-MANAGE",
+          "sourceIds": "S017"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S017"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S017"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S017"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S017"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S017"
+        }
+      ]
+    },
+    {
+      "entityId": "E15",
+      "name": "NeuroReach",
+      "baselineOfferId": "P15-EXCLUSIVE",
+      "baselineOfferName": "Эксклюзив по нише",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 300000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 900000,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S018",
+      "sourceUrl": "https://neuroreach.ru/",
+      "limitations": "Supplier selects winner after internal tender; price floor conditional on acceptance",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 300000,
+          "threeMonthArithmeticFloorRub": 900000,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P15-EXCLUSIVE",
+          "sourceIds": "S018"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S018"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S018"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S018"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S018"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S018"
+        }
+      ]
+    },
+    {
+      "entityId": "E16",
+      "name": "Carambola.GEO",
+      "baselineOfferId": "P16-BASE",
+      "baselineOfferName": "Базовый",
+      "modelClass": "FIXED_TIER",
+      "monthlyPublishedValueRub": 103700,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 311100,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S019",
+      "sourceUrl": "https://carambola.pro/",
+      "limitations": "Six-month contract is stated in guarantee section; minimum for Basic tariff is not independently established. Do not assert six-month minimum here",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 103700,
+          "threeMonthArithmeticFloorRub": 311100,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P16-BASE",
+          "sourceIds": "S019"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 176900,
+          "threeMonthArithmeticFloorRub": 530700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P16-SYSTEM",
+          "sourceIds": "S019"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 298900,
+          "threeMonthArithmeticFloorRub": 896700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P16-ADV",
+          "sourceIds": "S019"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BUNDLED_TIER_LOWER_BOUND",
+          "monthlyFloorRub": 298900,
+          "threeMonthArithmeticFloorRub": 896700,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": "P16-ADV",
+          "sourceIds": "S019"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S019"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S019"
+        }
+      ]
+    },
+    {
+      "entityId": "E18",
+      "name": "Ашманов и партнеры",
+      "baselineOfferId": "P18-START",
+      "baselineOfferName": "GEO-оптимизация",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 180000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": null,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S021",
+      "sourceUrl": "https://www.ashmanov.com/seo-prodvizhenie/generative-optimization/",
+      "limitations": "Official says from 180k without specified price period in source",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S021"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S021"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S021"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S021"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S021"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S021"
+        }
+      ]
+    },
+    {
+      "entityId": "E19",
+      "name": "KINETICA",
+      "baselineOfferId": "P19-START",
+      "baselineOfferName": "Старт в AI",
+      "modelClass": "FIXED_TIER",
+      "monthlyPublishedValueRub": 85000,
+      "priceKind": "PUBLISHED",
+      "threeMonthArithmeticFloorRub": 255000,
+      "minimumContractMonths": 4,
+      "minimumTermFloorRub": 340000,
+      "primarySourceId": "S022",
+      "sourceUrl": "https://kinetica.su/geo-prodvizhenie/",
+      "limitations": "Monthly billed; explicit min 4 months",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 85000,
+          "threeMonthArithmeticFloorRub": 255000,
+          "minimumTermFloorRub": 340000,
+          "selectedOfferId": "P19-START",
+          "sourceIds": "S022"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 340000,
+          "selectedOfferId": null,
+          "sourceIds": "S022"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 340000,
+          "selectedOfferId": null,
+          "sourceIds": "S022"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_NONCOMPARABLE_UNITS_OR_LIMIT",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 340000,
+          "selectedOfferId": null,
+          "sourceIds": "S022"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_NO_PUBLISHED_MATCHING_TIER",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 340000,
+          "selectedOfferId": null,
+          "sourceIds": "S022"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 340000,
+          "selectedOfferId": null,
+          "sourceIds": "S022"
+        }
+      ]
+    },
+    {
+      "entityId": "E20",
+      "name": "Kokoc Performance (Kokoc Group)",
+      "baselineOfferId": "P20-PRICE",
+      "baselineOfferName": "GEO — цена в блоке",
+      "modelClass": "CONFLICTED",
+      "monthlyPublishedValueRub": 100000,
+      "priceKind": "CONFLICTED",
+      "threeMonthArithmeticFloorRub": null,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S023",
+      "sourceUrl": "https://kokoc.com/seo-prodvijenie-saytov/v-nejrosetyah/",
+      "limitations": "100k/month price block vs 80k/month FAQ",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S023"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S023"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S023"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S023"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S023"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S023"
+        }
+      ]
+    },
+    {
+      "entityId": "E21",
+      "name": "GeoAist / SherNet (один экономический поставщик)",
+      "baselineOfferId": "P21-DOTCOM",
+      "baselineOfferName": "GeoAist managed GEO (.com)",
+      "modelClass": "CONFLICTED",
+      "monthlyPublishedValueRub": 50000,
+      "priceKind": "CONFLICTED",
+      "threeMonthArithmeticFloorRub": null,
+      "minimumContractMonths": null,
+      "minimumTermFloorRub": null,
+      "primarySourceId": "S024",
+      "sourceUrl": "https://geoaist.com/geo-promotion",
+      "limitations": "50k on .com page conflicts with 58k on .ru homepage; two brand domains same economic seller",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S024"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S024"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S024"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S024"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S024"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "BLOCKED_CONFLICT_OR_PRICE_PERIOD_UNKNOWN",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": null,
+          "selectedOfferId": null,
+          "sourceIds": "S024"
+        }
+      ]
+    },
+    {
+      "entityId": "E23",
+      "name": "IT-Agency",
+      "baselineOfferId": "P23-BASE",
+      "baselineOfferName": "GEO project",
+      "modelClass": "FROM_PLUS_QUOTE",
+      "monthlyPublishedValueRub": 120000,
+      "priceKind": "FROM",
+      "threeMonthArithmeticFloorRub": 360000,
+      "minimumContractMonths": 6,
+      "minimumTermFloorRub": 720000,
+      "primarySourceId": "S028",
+      "sourceUrl": "https://www.it-agency.ru/services/geo/",
+      "limitations": "Header says 120000 per project, pricing paragraph says per month; latter explicit. Quote depends on niche and content",
+      "scenarioResults": [
+        {
+          "scenarioId": "BASE_3M",
+          "status": "BASE_ARITHMETIC_LOWER_BOUND",
+          "monthlyFloorRub": 120000,
+          "threeMonthArithmeticFloorRub": 360000,
+          "minimumTermFloorRub": 720000,
+          "selectedOfferId": "P23-BASE",
+          "sourceIds": "S028"
+        },
+        {
+          "scenarioId": "PROMPTS_PLUS_20",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 720000,
+          "selectedOfferId": null,
+          "sourceIds": "S028"
+        },
+        {
+          "scenarioId": "NETWORKS_PLUS_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 720000,
+          "selectedOfferId": null,
+          "sourceIds": "S028"
+        },
+        {
+          "scenarioId": "BOTH_PLUS_20_2",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 720000,
+          "selectedOfferId": null,
+          "sourceIds": "S028"
+        },
+        {
+          "scenarioId": "CONTENT_PLUS_4",
+          "status": "UNKNOWN_REQUIRES_COMMERCIAL_QUOTE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 720000,
+          "selectedOfferId": null,
+          "sourceIds": "S028"
+        },
+        {
+          "scenarioId": "PAID_PLACEMENT_PLUS_1",
+          "status": "UNKNOWN_PAID_PLACEMENT_RATE",
+          "monthlyFloorRub": null,
+          "threeMonthArithmeticFloorRub": null,
+          "minimumTermFloorRub": 720000,
+          "selectedOfferId": null,
+          "sourceIds": "S028"
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Расчеты являются нижними ориентирами, а не публичными офертами",
+    "Неизвестные расходы не приравниваются нулю",
+    "Расхождения официальных тарифных страниц не разрешались догадками",
+    "Исходные источники получены из поисковых представлений с различной свежестью",
+    "IndexResearch и GAEO связаны через сооснователя Алексея Яковлева"
+  ]
+}

@@ -1,0 +1,8 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: TIER_TRANSITIONS.csv>
+index,entity_id,from_offer,to_offer,from_rub_month,to_rub_month,whole_bundle_delta_rub_month,per_unit_increment_price,source_ids,comparison_note
+0,E03,P03-TEST,P03-BRAND,86000,162000,76000,NOT_CALCULABLE,S003,"Verified main Test and Brand levels: 50 -> 100 prompts, 4 -> 12 monthly original materials, both 6 networks; RUB 76,000 is the cost of the whole upgraded bundle. Older brand-named offer is distinct."
+1,E05,P05-TEST,P05-BRAND,98000,238000,140000,NOT_CALCULABLE,S008,Comparable content units and prompts within package
+2,E16,P16-BASE,P16-SYSTEM,103700,176900,73200,NOT_CALCULABLE,S019,"Both lower bounds, changes multiple quantities"
+3,E21,P22-LIGHT,P22-BUSINESS,58000,139000,81000,NOT_CALCULABLE,S027,"Only SherNet named tiers, not GeoAist managed service"
+4,E14,P14-MANAGE,P14-BASIC,90000,160000,70000,NOT_CALCULABLE,S017,Ten briefs vs ten written articles: deliverables DIFFER

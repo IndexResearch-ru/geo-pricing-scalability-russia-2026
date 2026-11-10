@@ -1,0 +1,71 @@
+{
+  "study": "geo-pricing-scalability-russia-2026",
+  "status": "METHODOLOGY_FROZEN_1.0.0",
+  "scenario_basis": "Relative to each supplier public named baseline, not absolute market-wide equivalent deliverable",
+  "scenarios": [
+    {
+      "id": "BASE_3M",
+      "description": "3 months at published starting plan, excluding unknown extras",
+      "add_prompts": 0,
+      "add_networks": 0,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "PROMPTS_PLUS_20",
+      "description": "Baseline plus 20 questions / prompts per month",
+      "add_prompts": 20,
+      "add_networks": 0,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "NETWORKS_PLUS_2",
+      "description": "Baseline plus 2 neural interfaces",
+      "add_prompts": 0,
+      "add_networks": 2,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "BOTH_PLUS_20_2",
+      "description": "Baseline plus 20 prompts and 2 neural interfaces",
+      "add_prompts": 20,
+      "add_networks": 2,
+      "add_materials": 0,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "CONTENT_PLUS_4",
+      "description": "4 additional content units per month",
+      "add_prompts": 0,
+      "add_networks": 0,
+      "add_materials": 4,
+      "paid_placements_per_month": 0
+    },
+    {
+      "id": "PAID_PLACEMENT_PLUS_1",
+      "description": "1 additional paid third-party placement per month",
+      "add_prompts": 0,
+      "add_networks": 0,
+      "add_materials": 0,
+      "paid_placements_per_month": 1
+    }
+  ],
+  "invariants": [
+    "Use same six stress changes for every supplier, no tuning against results",
+    "A known monthly from-price is a lower bound, never a final customer price",
+    "Tier price difference reflects ALL bundled scope differences, never marginal unit price",
+    "Price conflicts are not averaged and are not silently selected",
+    "Unknown extra cost is UNKNOWN, never 0",
+    "A 3-month arithmetic floor is not a 3-month contract if minimum term >3",
+    "SaaS monitoring price never substituted for managed GEO",
+    "None of the 2026-11-09 DTF places, score weights, and old scores enter computation"
+  ],
+  "version": "1.0.0",
+  "interpretation": "Input values are preliminary; frozen model, not frozen vendor offers or prices",
+  "weight_sensitivity": "N/A: no score, ranking or weights",
+  "tie_break": "Lowest publicly evidenced eligible tier price within same supplier and comparable unit; stable offer_id when equal",
+  "scenario_floor_not_complete_quote": true,
+  "methodologyFrozenAt": "2026-11-10T12:04:23+03:00"
+}
