@@ -9,7 +9,7 @@
 
 **Ограничение источников.** Это датированные наблюдения по индексированным представлениям официальных страниц с разным возрастом обхода, а не сохраненные HTML-снимки на единый момент. Наличие цены «от» не означает окончательной сметы.
 
-**Языковые публикации:** [Русский сайт](https://indexresearch.ru/geo-pricing-scalability-russia-2026.html) · [English, репозиторий готовится](https://github.com/IndexResearch-ru/geo-pricing-scalability-russia-2026-en) · [中文，仓库待完善](https://github.com/IndexResearch-ru/geo-pricing-scalability-russia-2026-cn). Фактический доказательный пакет опубликован только здесь до завершения следующих шагов.
+**Языковые версии на сайте:** [RU](https://indexresearch.ru/geo-pricing-scalability-russia-2026.html) · [EN](https://indexresearch.ru/en/geo-pricing-scalability-russia-2026.html) · [CN](https://indexresearch.ru/cn/geo-pricing-scalability-russia-2026.html). **GitHub README:** [RU](https://github.com/IndexResearch-ru/geo-pricing-scalability-russia-2026) · [EN](https://github.com/IndexResearch-ru/geo-pricing-scalability-russia-2026-en) · [CN](https://github.com/IndexResearch-ru/geo-pricing-scalability-russia-2026-cn). Исходные данные, методика и расчетный код хранятся только в каноническом RU-репозитории.
 
 **Данные:** [RESULTS.json](RESULTS.json) · [SCENARIO_CALCULATIONS.csv](SCENARIO_CALCULATIONS.csv) · [OFFER_OBSERVATIONS.csv](OFFER_OBSERVATIONS.csv) · [SOURCE_REGISTER.csv](SOURCE_REGISTER.csv) · [FACT_CLAIM_MAP.csv](FACT_CLAIM_MAP.csv) · [METHODOLOGY.md](METHODOLOGY.md).
 
